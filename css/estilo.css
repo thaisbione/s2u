@@ -1,0 +1,101 @@
+body {
+	background: black;
+	font-family: tahoma;
+}
+
+body .content {
+	color: rgb(228, 223, 27);
+	margin: 0 auto;
+	overflow: hidden;
+	font-family: century;
+	width: 960px;
+}
+
+body .content .logomarca {
+	font-size: 72px;
+	float: left;
+}
+
+body .content .logomarca .texto {
+	margin-left: 7px;
+}
+
+body .content .logomarca .descricao {
+	font-size: 16px;
+}
+
+body .content .logomarca .descricao {
+	margin: 0;
+	margin-top: -10px;
+}
+
+body .content  .login {
+	float: right;
+	margin: 10px;
+}
+
+body .content .login {
+	padding: 6px 10px;
+	background-color: rgb(228, 223, 27);
+	color: black;
+	border-radius: 5px;
+}
+
+.label { 
+	Color: rgb(228, 223, 27);
+	margin: 10px 0;
+	display: block;
+}
+
+body .content .menu {
+	margin-top: 40px;
+	margin-left: 240px;
+	border-radius: 5px;
+	background: rgb(228, 223, 27);
+	padding: 10px;
+	color: black;
+	width: 460px;
+}
+
+body .content .header {
+	overflow: hidden;
+	position: fixed;
+	width: 960px;
+	background: black;
+	top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+body .content .menu li {
+	display: inline;
+}
+
+body .content .menu li:hover,
+body .content .login:hover {
+	text-shadow: 1px 0px 0px black;
+}	
+
+body .content a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+body .content .context {
+	margin: 165px 60px;
+	clear: both;
+	padding: 10px;
+	color: rgb(128, 128, 128);
+	border-radius: 10px;
+}
+
+.introducao {
+	background-image: url("../imagens/background.jpg");
+	display: block;
+	background-repeat: no-repeat;
+	color: transparent;
+	border-radius: 8px;
+	width: 800px;
+	height: 210px;
+}
