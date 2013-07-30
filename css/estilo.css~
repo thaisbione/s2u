@@ -48,12 +48,13 @@ body .content .login {
 }
 
 body .content .menu {
-	margin-top: 14%;
+	margin-top: 10%;
+	margin-left: 0px;
 	border-radius: 5px;
 	background: rgb(228, 223, 27);
 	padding: 6px 10px;
 	color: black;
-	font-size: 11pt;
+	width: 100%;
 }
 
 body .content .header {
@@ -63,22 +64,14 @@ body .content .header {
 	background: black;
 	top: 0;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 body .content .menu li {
 	display: inline;
-	float: right;
-	margin: 0 8px;
 }
 
-body .content .menu li.current-user {
-	width: 50%;
-	display: inline-block;
-	float: none;
-}
-
-body .content .menu li a:hover,
-body .content .menu li .nome-usuario,
+body .content .menu li:hover,
 body .content .login:hover {
 	text-shadow: 1px 0px 0px black;
 }	
@@ -89,20 +82,9 @@ body .content a {
 	cursor: pointer;
 }
 
-
-body .content .context #inicio {
-	margin-top: 200px;
-}
-
-body .content .context #oferecer-servico, 
-body .content .context #adquirir-servico,
-body .content .context #contato {
-	margin-top: 22%;
-}
-
 body .content .context {
+	margin: 165px 60px;
 	clear: both;
-	margin: 0 60px;
 	padding: 10px;
 	color: rgb(128, 128, 128);
 	border-radius: 10px;
@@ -116,39 +98,7 @@ body .content .context {
 	border-radius: 8px;
 	width: 800px;
 	height: 210px;
-	margin-top: 20px;
 }
 
-.box-login {
-	display: none;
-	position: absolute;
-	width: 25%;
-	margin-left: 500px;
-	padding: 3px;
-	border: 1px solid yellow;
-	border-radius: 4px;
-}
+  
 
-.box-login input {
-	border: none;
-	padding: 2%;
-	margin: 4px;
-	border-radius: 4px;
-	width: 92%;
-}
-
-.box-login .actions {
-	text-align: center;
-}
-
-.box-login button {
-	cursor: pointer;
-	margin: 4px;
-	border-radius: 4px;
-}
-
-.box-login .cadastrar a{
-	color:  yellow;
-	cursor: pointer;
-	display: block;
-}
