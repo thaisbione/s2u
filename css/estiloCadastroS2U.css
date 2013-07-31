@@ -1,0 +1,209 @@
+body {
+	background: black;
+	font-family: tahoma;
+	/*border:1px solid white;*/
+}
+
+body .content {
+	color: rgb(228, 223, 27);
+	margin: 0 auto;
+	overflow: hidden;
+	font-family: century;
+	width: 960px;
+	/*border:1px solid white;*/
+}
+
+body .content .logomarca {
+	font-size: 72px;
+	float: left;
+	/*border:1px solid white;*/
+}
+
+body .content .logomarca .texto {
+	margin-left: 7px;
+	/*border:1px solid white;*/
+}
+
+body .content .logomarca .descricao {
+	font-size: 16px;
+	/*border:1px solid white;*/
+}
+
+body .content .logomarca .descricao {
+	margin: 0;
+	margin-top: -10px;
+}
+
+body .content  .login {
+	float: right;
+	margin: 10px;
+	/*border:1px solid white;*/
+}
+
+body .content .login {
+	padding: 6px 10px;
+	background-color: rgb(228, 223, 27);
+	color: black;
+	border-radius: 5px;
+}
+
+.label { 
+	Color: rgb(228, 223, 27);
+	margin: 10px 0;
+	display: block;
+}
+
+body .content .menu {
+	margin-top: 10%;
+	margin-left: 0px;
+	border-radius: 5px;
+	background: rgb(228, 223, 27);
+	padding: 6px 10px;
+	color: black;
+	width: 100%;
+	border:1px solid white;
+}
+
+body .content .header {
+	overflow: hidden;
+	position: fixed;
+	width: 960px;
+	background: black;
+	top: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/*border:1px solid white;*/
+}
+
+body .content .menu li {
+	display: inline;
+}
+
+body .content .menu li:hover,
+body .content .login:hover {
+	text-shadow: 1px 0px 0px black;
+}	
+
+body .content a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+body .content .context {
+	margin: 165px 60px;
+	clear: both;
+	padding: 10px;
+	color: rgb(128, 128, 128);
+	border-radius: 10px;
+	/*border:1px solid white;*/
+	height:700px;
+}
+
+.cadastre-se{
+	text-align:center;
+	margin-top:1%;
+}
+
+#dadosFormulario{
+	/*border:1px solid white;*/
+	height:500px;
+}
+
+.label{
+	width:400px;
+	/*height:395px;*/
+	float:left;
+	margin:0;
+	/*border:1px solid white;*/
+}
+
+.caixas{
+	width:400px;
+	float:right;
+	/*border:1px solid white;*/
+}
+
+#caixaNome, #caixaSobrenome, #caixaEmail, #caixaUsuario{
+	position:relative;
+	width:300px;
+	height:20px;
+	border-radius:5px;
+	float:left;
+}
+
+#caixaSenha, #caixaConfirmarSenha, #caixaEndereco, #caixaCpf, #caixaRg{
+	position:relative;
+	width:200px;
+	height:20px;
+	border-radius:5px;
+	float:left;
+}
+
+label{
+	/*border:1px solid white;*/
+	float:right;
+}
+
+#labelNome{
+	position:relative;
+	top:6px;
+}
+
+#labelSobrenome{
+	position:relative;
+	top:6px;
+}
+
+#labelEmail{
+	position:relative;
+	top:6px;
+}
+
+#labelUsuario{
+	position:relative;
+	top:6px;
+}
+
+#labelSenha{
+	position:relative;
+	top:6px;
+}
+
+#labelConfirmarSenha{
+	position:relative;
+	top:6px;
+}
+
+#labelEndereco{
+	position:relative;
+	top:6px;
+}
+
+#labelCpf{
+	position:relative;
+	top:6px;
+}
+
+#labelRg{
+	position:relative;
+	top:6px;
+}
+
+#botaoEnviar{
+	position:relative;
+	left:3%;
+	margin-top:6%;
+	width:200px;
+	height:45px;
+	border-radius:5px;
+	font-size:23px;
+	clear:both;
+	/*border:1px solid white;*/
+}
+
+#botaoEnviar:hover{
+	color:#ffffff;
+	background-color:#145ECC;
+	
+}

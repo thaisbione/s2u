@@ -6,12 +6,11 @@ $(document).ready(function() {
 
   $(".cancel").click(function(){
   	$(".box-login").hide();
-  })
+  });
 
- //  $("a.login").mouseout(function(){
-	// $(".box-login").css("display", "none");
- //  });
-
+  $(".enviar-formulario").click(function(){
+	alert("Cadastro Realizado com Sucesso");
+  });
 
 });
 

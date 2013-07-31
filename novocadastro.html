@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script src="js/s2u.js"></script>
+	<title>Services to You</title>
+</head>
+<body>
+	<div class="content">
+		<div class="header">
+			<div class="logomarca">
+				<span class="texto">S2U</span>
+				<p class="descricao">Solucão em Serviços</p>
+			</div>
+			<a class="login">Entrar</a>
+			 <div class="box-login">
+				<form>
+					<input placeholder="Insira aqui seu e-mail">
+					<input placeholder="Insira sua senha">
+					<div class="actions">
+						<button type='submit'>Enviar</button>
+						<button class="cancel">Cancelar</button>
+						<span class="cadastrar"><a href="novocadastro.html">Quero me cadastrar!</a></span>
+					</div>
+				</form>
+			</div>
+			<ul class="menu">
+				<li class="current-user">Olá <span class="nome-usuario"> Fulano de tal.  </span> Bem vindo ao S2U seu portal de serviços. </li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="adquirir.html">Adquirir Serviço</a></li> 
+				<li><a href="oferecer.html">Oferecer Serviço</a></li> 
+				<li><a href="Tela.html">Inicio</a></li>
+			</ul>
+		</div>
+		<div class="context">
+			<div id="novo-cadastro">
+				<h1 class="cadastre-se">Cadastre-se</h1>
+				<form id="dadosFormulario" action="#" method="post">
+					<span>
+						<label for="nome" id="labelNome">Nome:</label>
+						<input type="text"  placeholder="Informe aqui o seu nome" name="nome" id="caixaNome"/>
+					</span>
+					<span>
+						<label for="sobrenome" id="labelSobrenome">Sobrenome:</label>
+						<input type="text" name="sobrenome" placeholder="Informe seu sobrenome" id="caixaSobrenome"/>
+					</span>
+					<span>
+						<label for="email" id="labelEmail">E-mail:</label>
+						<input type="email" name="email" placeholder="Informe seu e-mail" id="caixaEmail"/>
+					</span>
+					<span>
+						<label for="userId" id="labelUsuario">Usuário:</label>
+						<input type="text" name="userId" placeholder="Escolha seu login" id="caixaUsuario"/>
+					</span>
+					<span>
+						<label for="senha" id="labelSenha">Senha:</label>
+					<input type="password" name="senha" placeholder="Informe sua senha" id="caixaSenha"/>
+					<span>
+						<label for="confirmarSenha" id="labelConfirmarSenha">Confirmar Senha:</label>
+						<input type="password" name="confirmarSenha" placeholder="Por favor, confirme a senha informada" id="caixaConfirmarSenha">
+					</span>
+					<span>
+						<label for="endereco" id="labelEndereco">Endereço:</label>
+						<input type="text" name="endereco" placeholder="Informe seu endereço" id="caixaEndereco">
+					</span>
+					<span>
+						<label for="cpf" id="labelCpf">C.P.F.:</label>
+						<input type="text" name="cpf" placeholder="Informe seu CPF, utilize apenas números" id="caixaCpf">
+					</span>
+					<span>
+						<label for="rg" id="labelRg">R.G.:</label>
+						<input type="text" name="rg" placeholder="Informe seu RG" id="caixaRg">
+					</span>
+					<input type="submit" class="enviar-formulario" value="Enviar" id="botaoEnviar" onClick="goToHome()">
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

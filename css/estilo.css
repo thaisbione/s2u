@@ -34,7 +34,8 @@ body .content  .login {
 	margin: 10px;
 }
 
-body .content .login {
+body .content .login,
+.enviar-formulario {
 	padding: 6px 10px;
 	background-color: rgb(228, 223, 27);
 	color: black;
@@ -96,6 +97,7 @@ body .content .context #inicio {
 
 body .content .context #oferecer-servico, 
 body .content .context #adquirir-servico,
+body .content .context #novo-cadastro,
 body .content .context #contato {
 	margin-top: 22%;
 }
@@ -151,4 +153,30 @@ body .content .context {
 	color:  yellow;
 	cursor: pointer;
 	display: block;
+}
+
+#dadosFormulario {
+	text-align: left;
+}
+
+#dadosFormulario span {
+	display: block;
+	margin: 2% 0;
+}
+
+#dadosFormulario span label {
+	float: left;
+	width: 120px;
+}
+
+#dadosFormulario span input {
+	padding: 4px;
+	border: none;
+	width: 48%;
+	border-radius: 4px;
+}
+
+#dadosFormulario span input[type=submit] {
+	width: 10%;
+	margin-left: 54%;
 }
