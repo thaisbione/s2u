@@ -179,4 +179,5 @@ body .content .context {
 #dadosFormulario span input[type=submit] {
 	width: 10%;
 	margin-left: 54%;
+	cursor: pointer;
 }
