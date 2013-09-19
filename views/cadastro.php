@@ -173,9 +173,9 @@ function campoVazio(){
             </div>
             <a class="login">Entrar</a>
              <div class="box-login">
-                <form>
-                    <input placeholder="Insira aqui seu e-mail">
-                    <input placeholder="Insira sua senha">
+                <form action="login.php" method="post">
+                    <input name="email" placeholder="Insira aqui seu e-mail">
+                    <input name="senha" placeholder="Insira sua senha">
                     <div class="actions">
                         <button type='submit'>Enviar</button>
                         <button class="cancel">Cancelar</button>
