@@ -1,0 +1,84 @@
+body{
+    background-color: lightskyblue;
+}
+
+#topo{
+    text-align: center;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../views/images/logo.png");
+    height: 170px;
+    border: solid thick;
+    border-radius: 2em;
+    box-shadow: black 0.2em 0.2em 0.1em;
+}
+
+#menu{
+    text-align: center; 
+}
+
+#conteudo{
+    background-color: whitesmoke;
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border: solid thick;
+    border-radius: 1em;
+    box-shadow: black 0.1em 0.1em 0.1em; 
+    
+    
+}
+
+#logoUFRPE{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1.titulosConteudo , h2.titulosConteudo{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+#rodape{
+    padding: 10px;
+    text-align: center;
+}
+
+label{
+    text-align: left;
+    float: left;
+    width: 200px;
+    font-weight: bold;
+    padding-left: 300px;
+}
+
+#visualizar label{
+    padding-left:15px;
+    font-size: 18px;
+    clear: both;
+}
+
+input,select,submit{
+    margin-bottom: 10px;
+}
+
+.botaoCad{
+    margin-left: 50%;
+}
+
+fieldset{
+	padding-top:10px;
+	margin:0px auto;
+	border-style:ridge;
+        border-radius: 8px; /*deixa arredondado*/
+        border: 2px solid gray;        
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+    border:2px solid black;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+}
