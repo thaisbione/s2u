@@ -7,6 +7,7 @@
 	    echo "SENHA OK";
             session_start();
 	    $_SESSION['login'] = $dados['email'];
+	    $_SESSION['nome'] = $dados['nome'];
 	    echo "\n SESSAO OK";
 	    echo $_SESSION['login'];
 	    }
