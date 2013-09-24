@@ -1,9 +1,5 @@
 <form id="dadosFormulario" action="validarCadastroServico.php" method="post" onsubmit="return verificaForm()">
     <span>
-        <label for="userId" id="labelNome">Insira seu id de Usuário:</label>
-        <input type="text"  placeholder="Informe aqui o seu nome" name="userId" id="caixaNome"/>
-    </span>
-    <span>
         <label for="nomeServico" id="labelSobrenome">Servico a ser oferecido:</label>
         <input type="text" name="nomeServico" placeholder="Insira o nome de seu servico" id="caixaSobrenome"/>
     </span>
