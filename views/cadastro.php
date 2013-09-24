@@ -92,11 +92,6 @@ function campoVazio(){
         alert("Email Requerido");
         return false;
     }
-    var x4 = document.getElementById("caixaUsuario").value;
-    if(x4 == null || x4 == ""){
-        alert("Usuario Requerido");
-        return false;
-    }
     var x5 = document.getElementById("caixaSenha").value;
     if(x5 == null || x5 == ""){
         alert("Senha Requerida");
@@ -206,10 +201,6 @@ function campoVazio(){
                     <span>
                         <label for="email" id="labelEmail">E-mail:</label>
                         <input type="email" name="email" placeholder="Informe seu e-mail" id="caixaEmail"/>
-                    </span>
-                    <span>
-                        <label for="username" id="labelUsuario">Usuário:</label>
-                        <input type="text" name="username" placeholder="Escolha seu login" id="caixaUsuario"/>
                     </span>
                     <span>
                         <label for="senha" id="labelSenha">Senha:</label>
