@@ -166,25 +166,7 @@ function campoVazio(){
                 <span class="texto">S2U</span>
                 <p class="descricao">Solucão em Serviços</p>
             </div>
-            <a class="login">Entrar</a>
-             <div class="box-login">
-                <form action="login.php" method="post">
-                    <input name="email" placeholder="Insira aqui seu e-mail">
-                    <input name="senha" placeholder="Insira sua senha">
-                    <div class="actions">
-                        <button type='submit'>Enviar</button>
-                        <button class="cancel">Cancelar</button>
-                        <span class="cadastrar"><a href="cadastro.php">Quero me cadastrar!</a></span>
-                    </div>
-                </form>
-            </div>
-            <ul class="menu">
-                <li class="current-user">Olá <span class="nome-usuario"> Fulano de tal.  </span> Bem vindo ao S2U seu portal de serviços. </li>
-                <li><a href="contato.php">Contato</a></li>
-                <li><a href="adquirir.php">Adquirir Serviço</a></li> 
-                <li><a href="oferecer.php">Oferecer Serviço</a></li> 
-                <li><a href="Tela.php">Inicio</a></li>
-            </ul>
+            <?php include('box-login.php'); ?>
         </div>
         <div class="context">
             <div id="novo-cadastro">

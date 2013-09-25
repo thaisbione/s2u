@@ -4,15 +4,13 @@
 	$result = mysql_query($consulta);
 	$dados = mysql_fetch_array($result);	
         if ($dados['senha'] == $_POST['senha']) {
-	    echo "SENHA OK";
             session_start();
 	    $_SESSION['login'] = $dados['email'];
 	    $_SESSION['nome'] = $dados['nome'];
-	    echo "\n SESSAO OK";
-	    echo $_SESSION['login'];
+	    header("location:/s2u/views/index.php");
 	    }
         else {
-	    echo "SENHA INVALIDA";
+	    echo "<script>alert('E-mail ou senha invalidos');</script>";
 	     }
 	mysql_close($connection);
 
