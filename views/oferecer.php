@@ -2,23 +2,25 @@
 	include 'default.php';
 ?>
 		<div class="context">
-			<div id="oferecer-servico">
-				<h2>Oferecer Serviços</h2>
-				<p> Olá, somos a S2U (Services to You).  Seu portal de serviços. Aqui você irá encontrar as mais diversas mãos de obra para um trabalho de qualidade. A origem deste portal se deu da necessidade de um serviço terceirizado e a falta de recursos para encontrá-lo.</p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate	 velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p> Seja muito bem vindo, sua satisfação é nosso objetivo. Qualquer dúvida ou sugestão, procure-nos. Sua palavra é muito importante para nós. Equipe S2U. </p>
-			</div>
+      <div id="cadastro-servico">
+        <h1 class="cadastre-se">Cadastrar Novo Serviço</h1>
+  			<form id="dadosFormulario" action="validarCadastroServico.php" enctype="multipart/form-data" method="post" onsubmit="return verificaForm()">
+  			    <span>
+  			        <label for="nomeServico" id="labelSobrenome">Servico a ser oferecido:</label>
+  			        <input type="text" name="nomeServico" placeholder="Insira o nome de seu servico" id="caixaSobrenome"/>
+  			    </span>
+  			    <span>
+  			        <label for="descricao" id="labelEmail">Descrição:</label>
+  			        <textarea cols="55" rows="10" name="descricao" placeholder="Descreva seu serviço" id="caixaEmail"/></textarea>
+  			    </span>
+  			    <span>
+  			        <label for="imagem" id="labelSenha">Imagem:</label>
+  			        <input type="file" name="imagem" placeholder="escolha a imagem" id="caixaSenha"/>
+                <input type="submit" name="Upload" value="Submit">
+  			    </span>  
+  			    <input type="submit" class="enviar-formulario" value="Enviar" id="botaoEnviar">    
+  			</form>
+      </div>
 		</div>
 	</div>
 </body>

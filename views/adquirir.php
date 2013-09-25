@@ -2,23 +2,35 @@
 	include 'default.php';
 ?>
 		<div class="context">
-			<div id="adquirir-servico">
-				<h2>Adquirir Serviços</h2>
-				<p> Olá, somos a S2U (Services to You).  Seu portal de serviços. Aqui você irá encontrar as mais diversas mãos de obra para um trabalho de qualidade. A origem deste portal se deu da necessidade de um serviço terceirizado e a falta de recursos para encontrá-lo.</p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate	 velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p> Seja muito bem vindo, sua satisfação é nosso objetivo. Qualquer dúvida ou sugestão, procure-nos. Sua palavra é muito importante para nós. Equipe S2U. </p>
-			</div>
+		<div id="adquirir-servico">
+		<h2>Adquirir Serviços</h2>
+			
+		<?php
+			$connection = mysql_connect("localhost","root","12345") or die ("Não foi possível conectar: ".mysql_error()); 
+			
+			$banco = mysql_select_db("s2u",$connection) or die ("Não foi possível abrir o banco: ".mysql_error());
+			
+			$result = mysql_query("SELECT * FROM clientes");
+			
+			$linhaAfetada = mysql_num_rows($result); 
+			
+			if($linhaAfetada == 0){
+				echo "<script>alert('Nenhum Serviço Cadastrado!!')</script>";
+			}else{
+				
+				while($linha = mysql_fetch_array($result)){
+				
+					echo '<h3>Nome Servico: </h3>'. $linha['nomeServico']. "<br>" . '<h3>Descricao: </h3>' .$linha['descricao']. '<h3>Imagem</h3>' . "<img src='./images/".$linha['imagem']."' width='300px' height='200px'/>"."<br><button type='button'>Adquirir</button><br><br>";
+					
+					
+				}
+			}
+			
+			mysql_close($connection);
+			
+		?>		
+			
+		</div>
 		</div>
 	</div>
 </body>
