@@ -99,7 +99,8 @@ body .content .context #inicio {
 body .content .context #oferecer-servico, 
 body .content .context #adquirir-servico,
 body .content .context #novo-cadastro,
-body .content .context #contato {
+body .content .context #contato,
+body .content .context #cadastro-servico {
 	margin-top: 22%;
 }
 
