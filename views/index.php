@@ -15,6 +15,8 @@
 				                <img src="../imagens/4.jpg" data-thumb="images/up.jpg" alt=""/></a>
 				                <img src="../imagens/2.jpg" data-thumb="../images/walle.jpg" alt="" data-transition="slideInLeft" />
 				                <img src="../imagens/3.jpg" data-thumb="../images/nemo.jpg" alt=""/>
+				                <img src="../imagens/5.jpg" data-thumb="../images/nemo.jpg" alt=""/>
+				                <img src="../imagens/6.jpg" data-thumb="../images/nemo.jpg" alt=""/>
 				            </div>
 				            <div id="htmlcaption" class="nivo-html-caption">
 				                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
