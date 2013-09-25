@@ -1,3 +1,10 @@
+<script> $("a.entrar").click(function(){
+	  $(".box-login").css("display", "block");
+	  });
+	  $(".cancel").click(function(){
+	  $(".box-login").hide();
+	  });>
+</script>	
 <div class="box-login">
 	<form action="login.php" method="post">
 		<input name="email" placeholder="Insira aqui seu e-mail">
