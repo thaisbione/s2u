@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/estilo.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
-    <script src="js/s2u.js"></script>
+    <script src="../js/s2u.js"></script>
     <script>
         $(document).ready(function() {
             $("#caixaNome").keyup(function() {
